@@ -1,4 +1,13 @@
-﻿using ActionTextBox;
+﻿/*
+ *  Daniel L. Astillero
+ *  2017
+ * 
+ * 
+ * */
+
+
+
+using ActionTextBox;
 using System;
 using System.Drawing;
 using System.Windows.Forms;

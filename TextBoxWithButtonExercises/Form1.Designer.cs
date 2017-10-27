@@ -34,31 +34,32 @@
             this.actionTextBox1.BackColor = System.Drawing.Color.White;
             this.actionTextBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionTextBox1.HistedTextBoxReadOnly = false;
-            this.actionTextBox1.HostedButtonColor = System.Drawing.Color.WhiteSmoke;
-            this.actionTextBox1.HostedTextBoxCue = null;
+            this.actionTextBox1.HostedButtonColor = System.Drawing.Color.Crimson;
+            this.actionTextBox1.HostedTextBoxCue = "Search here";
             this.actionTextBox1.HostedTextBoxFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionTextBox1.HostedTextBoxMaxChar = 32767;
             this.actionTextBox1.HostedTextBoxText = "";
-            this.actionTextBox1.Location = new System.Drawing.Point(116, 120);
+            this.actionTextBox1.Location = new System.Drawing.Point(44, 23);
             this.actionTextBox1.Name = "actionTextBox1";
             this.actionTextBox1.Size = new System.Drawing.Size(280, 30);
             this.actionTextBox1.SubmitType = Pandora.UserControls.ActionTextBox.PActionTextBoxSumbitTypes.Search;
             this.actionTextBox1.TabIndex = 0;
+            this.actionTextBox1.HostedButtonClicked += new Pandora.UserControls.ActionTextBox.HostedButtonClickedEventHandler(this.actionTextBox1_HostedButtonClicked);
             // 
             // actionTextBox2
             // 
             this.actionTextBox2.BackColor = System.Drawing.Color.White;
             this.actionTextBox2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionTextBox2.HistedTextBoxReadOnly = false;
-            this.actionTextBox2.HostedButtonColor = System.Drawing.Color.WhiteSmoke;
-            this.actionTextBox2.HostedTextBoxCue = null;
+            this.actionTextBox2.HostedButtonColor = System.Drawing.Color.Coral;
+            this.actionTextBox2.HostedTextBoxCue = "Go!";
             this.actionTextBox2.HostedTextBoxFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionTextBox2.HostedTextBoxMaxChar = 32767;
             this.actionTextBox2.HostedTextBoxText = "";
-            this.actionTextBox2.Location = new System.Drawing.Point(116, 156);
+            this.actionTextBox2.Location = new System.Drawing.Point(44, 59);
             this.actionTextBox2.Name = "actionTextBox2";
             this.actionTextBox2.Size = new System.Drawing.Size(280, 30);
-            this.actionTextBox2.SubmitType = Pandora.UserControls.ActionTextBox.PActionTextBoxSumbitTypes.Search;
+            this.actionTextBox2.SubmitType = Pandora.UserControls.ActionTextBox.PActionTextBoxSumbitTypes.Go;
             this.actionTextBox2.TabIndex = 1;
             // 
             // actionTextBox3
@@ -66,15 +67,15 @@
             this.actionTextBox3.BackColor = System.Drawing.Color.White;
             this.actionTextBox3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionTextBox3.HistedTextBoxReadOnly = false;
-            this.actionTextBox3.HostedButtonColor = System.Drawing.Color.WhiteSmoke;
-            this.actionTextBox3.HostedTextBoxCue = null;
+            this.actionTextBox3.HostedButtonColor = System.Drawing.Color.DodgerBlue;
+            this.actionTextBox3.HostedTextBoxCue = "Launch";
             this.actionTextBox3.HostedTextBoxFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionTextBox3.HostedTextBoxMaxChar = 32767;
             this.actionTextBox3.HostedTextBoxText = "";
-            this.actionTextBox3.Location = new System.Drawing.Point(116, 192);
+            this.actionTextBox3.Location = new System.Drawing.Point(44, 95);
             this.actionTextBox3.Name = "actionTextBox3";
             this.actionTextBox3.Size = new System.Drawing.Size(280, 30);
-            this.actionTextBox3.SubmitType = Pandora.UserControls.ActionTextBox.PActionTextBoxSumbitTypes.Search;
+            this.actionTextBox3.SubmitType = Pandora.UserControls.ActionTextBox.PActionTextBoxSumbitTypes.Launcher;
             this.actionTextBox3.TabIndex = 2;
             // 
             // actionTextBox4
@@ -82,22 +83,22 @@
             this.actionTextBox4.BackColor = System.Drawing.Color.White;
             this.actionTextBox4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionTextBox4.HistedTextBoxReadOnly = false;
-            this.actionTextBox4.HostedButtonColor = System.Drawing.Color.WhiteSmoke;
-            this.actionTextBox4.HostedTextBoxCue = null;
+            this.actionTextBox4.HostedButtonColor = System.Drawing.Color.LimeGreen;
+            this.actionTextBox4.HostedTextBoxCue = "Add the text here";
             this.actionTextBox4.HostedTextBoxFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionTextBox4.HostedTextBoxMaxChar = 32767;
             this.actionTextBox4.HostedTextBoxText = "";
-            this.actionTextBox4.Location = new System.Drawing.Point(116, 228);
+            this.actionTextBox4.Location = new System.Drawing.Point(44, 131);
             this.actionTextBox4.Name = "actionTextBox4";
             this.actionTextBox4.Size = new System.Drawing.Size(280, 30);
-            this.actionTextBox4.SubmitType = Pandora.UserControls.ActionTextBox.PActionTextBoxSumbitTypes.Search;
+            this.actionTextBox4.SubmitType = Pandora.UserControls.ActionTextBox.PActionTextBoxSumbitTypes.Add;
             this.actionTextBox4.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 440);
+            this.ClientSize = new System.Drawing.Size(378, 206);
             this.Controls.Add(this.actionTextBox4);
             this.Controls.Add(this.actionTextBox3);
             this.Controls.Add(this.actionTextBox2);

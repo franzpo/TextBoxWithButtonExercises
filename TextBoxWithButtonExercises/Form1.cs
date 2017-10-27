@@ -7,7 +7,7 @@ namespace TextBoxWithButtonExercises {
             InitializeComponent();
         }
 
-        private void pActionTextBox1_HostedButtonClicked(object sender, ActionTextBox.HostedButtonClickedEventArgs e) {
+        private void actionTextBox1_HostedButtonClicked(object sender, ActionTextBox.HostedButtonClickedEventArgs e) {
             MessageBox.Show(e.Value);
         }
     }

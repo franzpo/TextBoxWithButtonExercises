@@ -79,9 +79,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ActionTextBox\ActionTextBox.csproj">
+    <ProjectReference Include="..\ActionTextBox\DanielCustomControls.csproj">
       <Project>{c079f1bf-232a-4d5b-b31b-74bd91220d54}</Project>
-      <Name>ActionTextBox</Name>
+      <Name>DanielCustomControls</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

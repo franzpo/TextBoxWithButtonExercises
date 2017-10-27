@@ -9,7 +9,7 @@ namespace Pandora.UserControls {
     /// <summary>
     /// A custom TextBox with built-in button
     /// </summary>
-    public partial class PActionTextBox : UserControl {
+    public partial class ActionTextBox : UserControl {
 
         /// <summary>
         /// Enumerates the types of submission the hosted Button does in this context
@@ -36,12 +36,12 @@ namespace Pandora.UserControls {
         /// <summary>
         /// Private field representing the <see cref="SubmitType"/>
         /// </summary>
-        public PActionTextBox.PActionTextBoxSumbitTypes _submitType;
+        public ActionTextBox.PActionTextBoxSumbitTypes _submitType;
 
         /// <summary>
-        /// Gets or sets the <see cref="PActionTextBox.PActionTextBoxSumbitTypes"/> of the HostedButton
+        /// Gets or sets the <see cref="ActionTextBox.PActionTextBoxSumbitTypes"/> of the HostedButton
         /// </summary>
-        public PActionTextBox.PActionTextBoxSumbitTypes SubmitType {
+        public ActionTextBox.PActionTextBoxSumbitTypes SubmitType {
             get { return this._submitType; }
             set {
                 this._submitType = value;
@@ -79,7 +79,7 @@ namespace Pandora.UserControls {
         /// <summary>
         /// Creates an instance of the APSTextBox
         /// </summary>
-        public PActionTextBox() => InitializeComponent();
+        public ActionTextBox() => InitializeComponent();
 
         /// <summary>
         /// Allows CTRL+Backspace and Select All
@@ -258,7 +258,7 @@ namespace Pandora.UserControls {
         /// <summary>
         /// Changes the single-char text of the hosted Button
         /// </summary>
-        private void SetHostedButtonIcon(PActionTextBox.PActionTextBoxSumbitTypes submitType) {
+        private void SetHostedButtonIcon(ActionTextBox.PActionTextBoxSumbitTypes submitType) {
             switch (submitType) {
                 case PActionTextBoxSumbitTypes.Search:
                     this.HostedButton.Text = LEFTP_MAGGLASS;

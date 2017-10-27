@@ -44,19 +44,19 @@
   <ItemGroup>
     <Compile Include="CueTextBox.cs" />
     <Compile Include="HostedButtonEventArgs.cs" />
-    <Compile Include="PActionTextBox.cs">
+    <Compile Include="ActionTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PActionTextBox.designer.cs">
-      <DependentUpon>PActionTextBox.cs</DependentUpon>
+    <Compile Include="ActionTextBox.designer.cs">
+      <DependentUpon>ActionTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="PanelWithBorder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpecialUnicodeCharacter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="PActionTextBox.resx">
-      <DependentUpon>PActionTextBox.cs</DependentUpon>
+    <EmbeddedResource Include="ActionTextBox.resx">
+      <DependentUpon>ActionTextBox.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

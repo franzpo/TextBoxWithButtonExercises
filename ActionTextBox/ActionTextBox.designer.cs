@@ -1,7 +1,7 @@
 ﻿using ActionTextBox;
 
 namespace Pandora.UserControls {
-    partial class PActionTextBox {
+    partial class ActionTextBox {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
@@ -12,7 +12,7 @@ namespace Pandora.UserControls {
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
+            if(disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -26,11 +26,11 @@ namespace Pandora.UserControls {
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            this.tip = new System.Windows.Forms.ToolTip(this.components);
             this.panMain = new PanelWithBorder();
             this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
             this.HostedTextBox = new CueTextBox();
             this.HostedButton = new System.Windows.Forms.Button();
-            this.tip = new System.Windows.Forms.ToolTip(this.components);
             this.panMain.SuspendLayout();
             this.tlpMain.SuspendLayout();
             this.SuspendLayout();
@@ -92,20 +92,19 @@ namespace Pandora.UserControls {
             this.HostedButton.Name = "HostedButton";
             this.HostedButton.Size = new System.Drawing.Size(30, 28);
             this.HostedButton.TabIndex = 1;
-            this.HostedButton.Text = ">";
             this.HostedButton.UseVisualStyleBackColor = false;
             this.HostedButton.Click += new System.EventHandler(this.HostedButton_Click);
             this.HostedButton.Enter += new System.EventHandler(this.HostedTextBox_Enter);
             this.HostedButton.Leave += new System.EventHandler(this.HostedTextBox_Leave);
             // 
-            // PActionTextBox
+            // ActionTextBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panMain);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "PActionTextBox";
+            this.Name = "ActionTextBox";
             this.Size = new System.Drawing.Size(280, 30);
             this.Enter += new System.EventHandler(this.HostedTextBox_Enter);
             this.Leave += new System.EventHandler(this.HostedTextBox_Leave);

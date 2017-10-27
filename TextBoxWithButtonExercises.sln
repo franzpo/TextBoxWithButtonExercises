@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBoxWithButtonExercises", "TextBoxWithButtonExercises\TextBoxWithButtonExercises.csproj", "{E8085379-6FF3-49ED-87E2-5DA77197C22C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionTextBox", "ActionTextBox\ActionTextBox.csproj", "{C079F1BF-232A-4D5B-B31B-74BD91220D54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanielCustomControls", "ActionTextBox\DanielCustomControls.csproj", "{C079F1BF-232A-4D5B-B31B-74BD91220D54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
